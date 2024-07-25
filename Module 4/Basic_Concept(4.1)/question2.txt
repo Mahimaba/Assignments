@@ -1,0 +1,17 @@
+ 2)What is OOP? List OOP concepts 
+
+oop is object oriented programming-It's not a programming lang but it's programming modal.
+There is 6 main piller:
+	1)class-blueprint of object
+	2)object-real word entity
+	3)inheritance-inhert parent class property to child class
+	  single level
+	  multi level
+	  multipal level
+	  hybird inhe.
+	  hyrarchical inhe.
+	4)Polymorphism-
+	  function overloding
+	  function overridding 
+	5)Abstract
+	6)Encapsulation 
