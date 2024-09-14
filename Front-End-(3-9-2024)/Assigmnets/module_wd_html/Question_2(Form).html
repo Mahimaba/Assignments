@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <!-- create form using table         row-14   col-2 -->
+    <form action="">
+<table align="center" cellspacing="1" cellpadding="10">
+
+
+
+    <!-- table name -->
+    <caption>Employee Registration Form</caption>    
+   
+        <tr>
+            <td></td>
+            <td>
+                <input type="radio" name="m" checked>Mr.
+                <input type="radio" name="m">Mrs.
+                <input type="radio" name="m">Ms.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">First Name</label>
+            </td>
+            <td>
+                <input type="text" placeholder="First Name" required pattern="[a-zA-z]{3,9}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">last Name</label>
+            </td>
+            <td>
+                <input type="text" placeholder="Last Name" required pattern="[a-zA-z]{3,9}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Mail Address1</label>
+            </td>
+            <td>
+                <input type="email" pattern="[a-z]+[a-z0-9\.\-\-]+@[a-z]+.[a-z]{2,3}" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Mail Address2</label>
+            </td>
+            <td>
+                <input type="email" pattern="[a-z]+[a-z0-9\.\-\-]+@[a-z]+.[a-z]{2,3}" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="" >city</label>
+            </td>
+            <td>
+                <input type="text" required pattern="[a-zA-z]+">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">State</label>
+            </td>
+            <td>
+                <select name="" id="" required>
+                    <option value="">Gujarat</option>
+                    <option value="">Rajeshthan</option>
+                    <option value="">Bihar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Zip Code</label></td>
+            <td><input type="text" required pattern="[0-9]{6}"></td>
+        </tr>
+        <tr>
+            <td><label for="">Upload Photo</label></td>
+            <td><input type="file" required></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Email_id</label>
+            </td>
+            <td>
+                <input type="email" pattern="[a-z]+[a-z0-9\.\-\-]+@[a-z]+.[a-z]{2,3}" required >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Mobile</label>
+            </td>
+            <td>
+                <input type="tel" placeholder="+91" required pattern="[89][0-9]{9}" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Languages Knows</label>
+            </td>
+            <td>
+                <input type="checkbox" checked>Gujarati
+                <input type="checkbox" checked>Hindi
+                <input type="checkbox" >English
+                <input type="checkbox" >Marathi
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Additional Information</label>
+            </td>
+            <td>
+               <textarea name="" id=""></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" name="" id="" value="Submit">
+                <input type="reset" name="" id="" value="reset">
+            </td>
+        </tr>
+    
+</table>
+
+</form>
+</body>
+</html>

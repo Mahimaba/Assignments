@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Membership Application</h2>
+    <div>To apply for membership please complete all questions</div>
+    <hr>
+    <form action="">
+        <table border="0" cellspacing="20" cellpadding="">
+            <tr>
+                <td><label for="firstName">Name</label></td>
+                <td><input type="text" name="firstName" id="firstName"><br ><span style="opacity: .4;">First name</span></td>
+                <td><input type="text" name="lastName" id="lastName"><br>Last Name</td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td colspan="2"><textarea name="address" id="address"></textarea><br>Street Address</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"><input type="text" name="addressLine2" id="addressLine2"><br>Street Address line 2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" name="city" id="city"><br>City</td>
+                <td><input type="text" name="state" id="state"><br>State/Province</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" name="zipCode" id="zipCode"><br>Zip Code</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="">Please Select</option>
+                        <option value="ind">India</option>
+                        <option value="usa">USA</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                    <br>Country
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail</label></td>
+                <td colspan="2"><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Home Number</td>
+                <td><input type="tel" name="homeAreaCode" id="homeAreaCode"><br>Area Code-</td>
+                <td><input type="tel" name="homePhone" id="homePhone"><br>Phone number</td>
+            </tr>
+            <tr>
+                <td>Cellular Number</td>
+                <td><input type="tel" name="cellAreaCode" id="cellAreaCode"><br>Area Code-</td>
+                <td><input type="tel" name="cellPhone" id="cellPhone"><br>Phone number</td>
+            </tr>
+            <tr>
+                <td>Work Number</td>
+                <td><input type="tel" name="workAreaCode" id="workAreaCode"><br>Area Code</td>
+                <td><input type="tel" name="workPhone" id="workPhone"><br>Phone number</td>
+            </tr>
+            <tr>
+                <td><label for="website">Website</label></td>
+                <td colspan="2"><input type="text" name="website" id="website"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

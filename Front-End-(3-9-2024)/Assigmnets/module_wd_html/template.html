@@ -1,0 +1,127 @@
+<!-- create single page tamplate -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+
+<body >
+
+
+    <!-- create table to formate the page -->
+    <!-- tr(row)=5   td(col)=6 -->
+
+
+
+
+
+    <table border="1" cellspacing="0" cellpadding="" >
+
+        <!-- tables row (tr) -->
+
+
+        <!-- navigation -->
+        <tr align="center" >
+            <td><a href="">Home</a></td>   <!-- table cols -->          
+            <td><a href="">about</a></td>
+            <td><a href="">contact</a></td>
+            <td><a href="">help</a></td>
+            <td><a href="">store</a></td>
+            <td width="200px"></td>
+        </tr>
+
+
+
+        <!-- image row -->
+        <tr>
+            <td colspan="6"><img src="./image/image1.jpg" alt=""  width="100%"></td>
+        </tr>
+
+
+        <!-- header tag in row -->
+        <tr>
+            <td colspan="6" align="center" bgcolor="pink">Contact-us-Page</td>
+        </tr>
+
+
+
+        <!-- background imag -->
+        <tr>
+            <td background="./image/background1.jpg" colspan="6" height="400px" align="center">
+                <h1> Contact us</h1>
+            </td>
+        </tr>
+
+
+
+
+        <!-- nasted table  -->
+        <tr>
+            <td colspan="6">
+                <table bgcolor="skyblue" width="100%" border="1" cellspacing="0">
+                    <tr align="center">
+                        <td>
+                            <label for="fn">First_name</label>
+                            <input type="text" name="" id="fn" required pattern="[a-zA-Z]{2,10}">
+                        </td>
+                        <td>
+                            <label for="ln">Last_name</label>
+                            <input type="text" name="" id="ln" required pattern="[a-zA-Z]{2,10}">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <label for="fn">Email_id</label>
+                            <input type="email" name="" id="fn" required
+                                pattern="[a-zA-z]+[0-9]_-]+@+[a-zA-z]+.+[a-z]{2,3}">
+                        </td>
+                        <td>
+                            <label for="ln">Phone_no</label>
+                            <input type="tel" name="" id="ln" required pattern="[8-9][0-9]{9}" maxlength="10">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <label for="">City</label>
+                            <select name="" id="">
+                                <option hidden>Choose City...</option>
+
+                                <option value="Ahemdabad" name="Ahemdabad">Ahemdabad</option>
+                                <option value="Morbi">Morbi</option>
+                                <option value="rajkot">rajkot</option>
+                                <option value="Mehsana">Mehsana</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="G">Gender:</label>
+                            <input type="radio" name="g" id="g" checked>Female
+                            <input type="radio" name="g" id="g">male
+                            <input type="radio" name="g" id="g">other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74842677533!2d72.41492722798856!3d23.020474102818895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1726053390381!5m2!1sen!2sin"
+                                width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </td>
+                        <td >
+                            <iframe width="990" height="500" src="https://www.youtube.com/embed/78t7DWEwrVU?si=qGaUf70vZHnIY-42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

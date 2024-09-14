@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="skyblue">
+
+<!-- without TABLE -->
+
+
+    <form action="" >
+        <label for="fn">Fristname:</label>
+        <input type="text" id="fn" required pattern="[a-zA-Z]{3,9}"><br><br>
+        <label for="mn">Middlename:</label>
+        <input type="text" id="mn"  required pattern="[a-zA-Z]{3,9}"><br>
+        <br>
+        <label for="ln">Lastname:</label>
+        <input type="text" id="ln"  required pattern="[a-zA-Z]{3,9}"><br><br>
+        <label for="c">Course</label>
+        <select name="" id="c" required>
+            <option value="" hidden>Course</option>
+            <option value="">BE</option>
+            <option value="">BCA</option>
+            <option value="">BTECH</option>
+        </select><br><br>
+        <label for="g" >Gender:</label><br>
+
+       <input type="radio" name="g" id="">Female<br>
+    <input type="radio" name="g" id="">Male<br>
+    <input type="radio" name="g" id="">Other<br>
+    <br>
+<label for="p">Phone:</label>
+<input type="text" name="" id="" value="+91"  style="width: 30px;"  disabled>&nbsp;<input type="tel" name="" id=""required pattern="[0-9]{10}" maxlength="10"><br><br>
+<label for="add">Address:</label><br>
+<textarea name="" id="add"></textarea><br><br>
+<label for="email">email:</label>
+<input type="email" id="email" pattern="[a-z.]{2,}@+[a-z]{3,}.[a-z]{2,3}"><br><br>
+<label for="Papas">password:</label>
+<input type="password" id="Papas" pattern="[0-9a-zA-Z]{8,12}" maxlength="12"><br><br>
+<label for="Papas1">Reset password:</label>
+<input type="password" id="Papas1"><br><br>
+<input type="submit" name="" id="">
+
+
+
+    </form>
+</body>
+</html>

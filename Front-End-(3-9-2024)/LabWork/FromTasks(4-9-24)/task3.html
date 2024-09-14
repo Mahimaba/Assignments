@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center" style="font-size: 40px;">Complaints</div>
+    <div align="center" >Hepl us improve our service</div>
+    
+    <!-- <hr style="height: 10px;"> -->
+     <br>
+     <hr>
+     <div style="height: 3px; background-color: black;"></div><br><br>
+
+    <table cellspacing="10" cellpadding="10">
+       <form action="">
+        <tr>
+            <td><label for="">Full Name </label><span style="color: red;">*</span></td>
+
+            <td>
+                <table>
+                    <tr>
+                    <td>
+                        <input type="text" name="" id="" required pattern="[a-zA-Z]{3,9}"><br>First 
+                    </td>
+                  
+                    <td>
+                        <input type="text" name="" id="" required pattern="[a-zA-Z]{3,9}"><br>Last   
+                    </td>
+                </tr>
+                </table>
+            </td>
+           
+        </tr>
+        <tr>
+            <td><label for="">Email</label><span style="color: red;">*</span></td>
+            <td><input type="email" name="" id="" required pattern="[a-z]+(?:[-_.+][a-z0-9]+)*@+[a-z]+.[a-z]{2,3}"></td>
+        </tr>
+        <tr>
+            <td><label for="">Phone</label></td>
+
+            <td><input type="tel" name="" id="" required pattern="[8-9][0-9]{9}" maxlength="10"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Where did we go wrong?</label><span style="color: red;">*</span></td>
+            <td colspan="2"><textarea name="" id="" cols="45" rows="5"></textarea></td>
+        </tr>
+        <tr>
+           <td></td>
+           <td align="center">
+            <input type="Submit" name="" id="" style=" background-color: red; color: aliceblue;padding: 10px; border-color:white ;">
+           </td>
+        </tr>
+       </form>
+    </table>
+</body>
+</html>
