@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+/* first-letter and first-liine */
+        ul li::first-letter {
+            color: red;
+        }
+
+        li::first-line {
+            background-color: aqua;
+        }
+
+        p::first-line {
+            background-color: aqua;
+        }
+
+
+
+
+        /* selection */
+        div::selection{
+            background-color: teal;
+            color: white;
+        }
+
+
+
+
+        /* before after */
+        ul li::after{
+            content: "a";
+        }
+
+
+        div::before{
+            content: "This is ";
+            background-color: tomato;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>home <br> second</li>
+        <li>About</li>
+        <li>Help</li>
+        <li>Account</li>
+        <li>Login</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Optio quidem quo laborum, assumenda nemo quae incidunt exercitationem perspiciatis quasi ipsum?</p>
+
+
+    <div class="div">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eius rerum explicabo, quasi illo, quibusdam
+        porro nisi assumenda vel, quidem quam! Eaque voluptates ipsa placeat at est repellendus eum distinctio quisquam
+        aut? Quia obcaecati alias tempora numquam possimus soluta doloribus veritatis. Aliquam neque culpa consequatur
+        adipisci, repudiandae in, quae repellendus recusandae obcaecati, pariatur laboriosam est molestiae? Nulla
+        provident nam qui repellat! Perferendis tenetur non harum reiciendis suscipit sint, nesciunt delectus nisi
+        reprehenderit! Eum quae molestias ducimus soluta cupiditate sed? Nam ducimus tempore aliquid quisquam laudantium
+        vero dicta, ipsum distinctio aut repellat illum, ratione voluptatibus? Quis, fugit in! Earum, ipsam blanditiis?
+    </div>
+</body>
+
+</html>
