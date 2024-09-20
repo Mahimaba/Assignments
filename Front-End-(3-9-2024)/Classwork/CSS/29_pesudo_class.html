@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid;
+        }
+    .main >:first-child{
+            color: aqua;
+        }
+        h2:last-child{
+            border: 2px solid orange;
+        }
+        h2:nth-child(2){
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>hello</h2>
+        <h2>h2</h2>
+        <h2>h3</h2>
+    </div>
+
+    <h2>external</h2>
+
+
+    <div class="main2">
+        <h2>this 1</h2>
+        <h2>this 2</h2>
+        <h2>this 4</h2>
+    </div>
+</body>
+</html>
