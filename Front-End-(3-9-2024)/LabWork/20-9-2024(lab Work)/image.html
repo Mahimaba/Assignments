@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rosybrown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: l;
+        }
+        .box{
+            width: 450px;
+            height: 300px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        .box .img{
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/1.webp);
+            transition: all .5s ease-in-out;
+            background-position: center;
+            background-size:cover;
+        }
+        .sub_box{
+            width: 350px;
+            height: 200px;
+            transform: translate(52px,-250px);
+                  border: 2px solid rgb(17, 16, 16);
+                  opacity: 0;
+                  color: black;
+                  transition: all .7s ease-in-out;
+
+        }
+        .box:hover .img{
+   transform: translate(20px,0px);
+
+        }
+        .box:hover  .sub_box{
+            transform: translate(65px,-250px);
+            opacity: 1;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin-left:20px ;
+            background-color: yellow;
+            position: relative;
+            
+        }
+
+        .box2 i{
+          font-size: 32px;
+          transform: translate(32px,31px);
+          z-index: 2;
+          position: absolute;
+        
+        }
+        .scle{
+            width: 100%;
+            height: 100%;
+            /* background-color: skyblue; */
+            /* transform: translate(40px,8px); */
+            transform: translate(0px,0px)  scale(0);
+            /* transform: scale(0); */
+            transition:all 1s ease-in-out;
+            z-index: 1;
+            position: absolute;
+        }
+        .box2:hover .scle{
+            transform: scale(1);
+            background-color: skyblue;
+            transform: translate(0px,0px)
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/bb308edeff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- <img src="./images/1.webp" alt=""> -->
+             <div class="img"></div>
+            <div class="sub_box">This is new...</div>
+        </div>
+        <div class="box2">
+            <i class="fa-solid fa-house"></i>
+            <div class="scle"></div>
+
+        </div>
+    </div>
+</body>
+</html>

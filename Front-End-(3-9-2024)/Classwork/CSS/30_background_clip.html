@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* background clip :te dekhade 6e ke background color kone konr lagse (content ,padding,border box) 
+
+border-box=content,padding,border
+padding-box=content,padding
+content-box=content
+*/
+
+
+
+
+.main{
+    background-color: aqua;
+    height: 100p;
+    border: 10px dotted black;
+    margin-bottom: 20px;
+    background-clip: border-box;
+}
+.main1{
+    background-color: aqua;
+    height: 100p;
+    border: 10px dotted black;
+    margin-bottom: 20px;
+    background-clip:padding-box;
+}
+.main2{
+    background-color: aqua;
+    height: 100p;
+    border: 10px dotted black;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-clip:content-box;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quasi ipsa dignissimos nesciunt, hic dolore ex
+        sint laborum suscipit eligendi, sit reprehenderit, delectus quo placeat doloribus. Error dolores quisquam
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae doloribus illo consectetu
+        r doloremque, beatae reprehenderit unde vitae praesentium eveniet.
+    </div>
+    <div class="main1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quasi ipsa dignissimos nesciunt, hic dolore ex
+        sint laborum suscipit eligendi, sit reprehenderit, delectus quo placeat doloribus. Error dolores quisquam
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis exercitationem necessitatibus velit rerum laboriosam a voluptates aspernatur sequi nam.
+    </div>
+    <div class="main2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quasi ipsa dignissimos nesciunt, hic dolore ex
+        sint laborum suscipit eligendi, sit reprehenderit, delectus quo placeat doloribus. Error dolores quisquam
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis exercitationem necessitatibus velit rerum laboriosam a voluptates aspernatur sequi nam.
+    </div>
+</body>
+
+</html>
