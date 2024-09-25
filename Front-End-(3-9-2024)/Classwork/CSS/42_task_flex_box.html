@@ -1,0 +1,54 @@
+<!-- how to center thee particular box -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: palevioletred;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .box {
+            /* display: inline-block; */
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+        }
+        .box-2{
+            /* transform: translateY(200px); */
+            position: relative;
+           top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">
+            1
+        </div>
+        <div class="box box-2" style="display: flex;align-items: center;justify-content: center;">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+    </div>
+</body>
+
+</html>

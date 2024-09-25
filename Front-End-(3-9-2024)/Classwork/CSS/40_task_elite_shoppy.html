@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background-color: lightseagreen;
+            justify-content: center;align-items: center;
+           
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid;
+            position: relative;
+            background-image: url(./images/nature.jpg);
+            /* overflow: hidden; */
+           
+        }
+        .box::after{
+            position: absolute;
+            content: "";
+            width: 198px;
+            height: 198px;
+            background-color: rgba(174, 163, 174, 0.545);
+            transform: translate(200px,-200px);
+            transition:1s ;
+        }
+        .box::before{
+            position: absolute;
+            content: "";
+            width: 198px;
+            height: 198px;
+            background-color: rgba(174, 163, 174, 0.55);
+            transform: translate(-200px,200px);
+            transition:1s ;
+        }
+        .box:hover::after{
+            transform: translate(0px,0px);
+        }
+        .box:hover::before{
+            transform: translate(0px,0px);
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="box"></div>
+</div>
+</body>
+</html>
