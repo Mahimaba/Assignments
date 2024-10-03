@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <!-- external js  -->
+    <script src="index.js"></script>
+
+
+
+
+
+
+    
+</head>
+<body>
+
+   
+   
+   
+   
+   
+   
+    <!-- internal js  basic structure-->
+    <script>
+
+       document.write("<center><h3>This is basic structer of javascript</h3></center>");
+        
+       document.write("<hr>")
+
+   
+   
+   
+   
+   
+   
+   
+   
+       //    variable declaretion
+    document.write("<hr>")
+    document.write("👉 varible <br>")
+    var a="mahima";
+    document.write(a+"<br>");
+    document.write("👉 concate the strings  <br>")
+    document.write("my name is "+a+"<br>");
+
+    document.write("<hr>")
+
+
+
+
+
+
+
+    //datatypes
+    document.write("👉 data types  <br>")
+    var b=10;
+    var c="dabhi";
+    var d,e;
+    d=["2","g","s","t"];
+    e=null;
+    var f
+    document.write("int:"+b+"<br>String:"+c+"<br>Array:"+d[2]+"<br>null:"+e+"<br>undefined:"+f+"<br>");
+
+
+
+
+
+    document.write("<hr>")
+document.write("👉use of back tik <br>")
+
+
+
+    // how to use  backtik
+document.write(`int number ${b},string value is ${c},Array value of index 2 is ${d[2]}`);
+
+
+
+
+
+
+// operatore in java script
+
+
+
+
+document.write("<hr>")
+document.write("<center>Operatore</center>")
+document.write("👉Arithmatic Opratore<br>");
+var n1=20,n2=10;
+document.write(`Addition:${n1+n2}<br>`)
+document.write(`substraction:${n1-n2}<br>`)
+document.write(`division:${n1/n2}<br>`)
+document.write(`modulo:${n1%n2}<br>`)
+
+
+document.write("👉increment && decfement Opratore<br>");
+document.write(`post increment:${n1++}<br>`)
+document.write(`pre increment:${++n1}<br>`)
+document.write(`pre decrement:${n2--}<br>`)
+document.write(`pre decrement:${--n2}<br>`)
+
+document.write("👉 comparision Opratore<br>");
+
+document.write(`n1==n2 :${n1==n2}<br>`)
+document.write(`n1<n2 :${n1<n2}<br>`)
+document.write(`n1!=n2 :${n1!=n2}<br>`);
+
+
+
+document.write("👉 logical Opratore<br>");
+
+document.write(`or :${(n1!=n2)||(n1==n2)}<br>`);
+document.write(`and :${(n1!=n2)&&(n1==n2)}<br>`);
+
+
+
+document.write("<hr>")
+document.write("<center>Type of function</center>")
+document.write("👉type of function<br>");
+document.write(` datatype of n2 is:${typeof(n2)}`);
+
+    </script>
+
+
+
+
+
+
+
+<!-- if else program  -->
+
+
+
+<h1>if else (even or odd)</h1>
+
+<script>
+    var a=10;
+    if(a==0){
+document.write("Number is zero");
+    }
+   else  if(a%2==0){
+        document.write("Number is even");
+    }
+    else{
+        document.write("Number is odd");
+    }
+</script>
+
+
+
+
+
+
+
+<!-- switch case example -->
+
+
+<h1>switc case (monday(1) to sunday(7))</h1>
+
+<script>
+    var c=4;
+    switch(c){
+        case 1:document.write("Monday"); break; 
+        case 2:document.write("trusday"); break; 
+        case 3:document.write("wenshday"); break; 
+        case 4:document.write("trushday"); break; 
+        case 5:document.write("fridat"); break; 
+        case 6:document.write("saturday"); break; 
+        case 7:document.write("sunday"); break; 
+    }
+</script>
+
+
+
+
+
+
+
+<!-- for loop example -->
+
+
+<h1>loops</h1>
+<h4>for loops</h4>
+
+<script>
+  var a=10;
+  for (var i=0;i<=10;i++){
+    document.write(`value of i is ${i}<br>`);
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<!-- do  while loop example -->
+
+
+<h4>do while loops</h4>
+
+<script>
+  var a=10;var i=1;
+  do{
+    document.write(`5 * ${i} = ${i*5}<br>`);
+    i++;
+  }while(i<10);
+</script>
+
+
+
+
+
+<!-- simple function -->
+
+  <h1>Function</h1>
+  <h4> simple Function</h4>
+
+<script>
+  function sum(){
+    var a=10;var b=20;
+    document.write("Sum of two variable using simple function:"+(a+b));
+  }
+  sum();
+</script> 
+
+
+
+
+
+<!-- parametrize function -->
+
+<h4> Parametrize Function</h4>
+
+<script>
+  function sum(a,b){
+   
+    document.write("Sum of two variable using parametrize function:"+(a+b));
+  }
+  var a=10;var b=20;
+  sum(a,b);
+</script>
+
+
+
+
+
+
+
+<!-- default function -->
+
+<h4> default Function</h4>
+<script>
+function sum(a=5,b=5){
+   
+    document.write("Sum of two variable using default function:"+(a+b)+"<br>");
+  }
+  var a=10;var b=20;
+  sum(a,b);
+  sum(a);
+  sum();
+
+</script> 
+</body>
+</html>
