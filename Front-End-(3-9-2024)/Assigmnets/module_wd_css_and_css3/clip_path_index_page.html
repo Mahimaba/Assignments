@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bb308edeff.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            /* background-color: azure; */
+            position: relative;
+            /* z-index: 0; */
+        }
+
+        .main {
+            width: 100%;
+
+            /* height: 100%; */
+            background-color: black;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 87%, 0% 70%);
+            background-image: url(./imges/clip_path.webp);
+
+            background-size: 100% 100%;
+            /* position: relative; */
+        }
+
+        /* i {
+            position: absolute;
+            bottom: 60px;
+            right: 50px;
+            z-index: 99;
+            color: rgb(169, 28, 28);
+            font-size: 3rem;
+
+        }
+ */
+
+        .body {
+            width: 80%;
+            margin: auto;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 0px 7px;
+            font-size: 20px;
+            position: relative;
+
+        }
+
+        ul li::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background-color: rgb(10, 103, 119);
+            bottom: -3px;
+            left: 2px;
+            transition: 1s ease-in-out;
+
+        }
+
+        ul li:hover {
+            color: rgb(5, 28, 76);
+        }
+
+        ul li:hover:after {
+            width: 90%;
+        }
+
+        .sect1 {
+            text-align: center;
+            padding: 80px;
+
+            /* border: 2px solid; */
+
+
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-block: 20px;
+        }
+
+        p {
+            font-size: 19px;
+            width: 60%;
+            margin: auto;
+            margin-block: 30px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 20px;
+            outline: none;
+            background-color: goldenrod;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            margin-block: 80px;
+        }
+
+        @media  only screen and (max-width:768px) {
+            .main{
+                width: 100%;
+               clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+
+            }
+            ul{
+                display: none;
+            }
+            .sect1{
+                width: 100%;
+            }
+            p{
+                width: 90%;
+            }
+            .body{
+                width: 100%;
+            }
+            button{
+              margin: 0;
+              padding: 0;
+               
+            }
+            .btn2{
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="body">
+                <nav>
+                    <div class="logo">Mahima🎶</div>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>Login</li>
+                    </ul>
+
+                </nav>
+                <div class="sect1">
+                    <h3>Our client Our first priority</h3>
+                    <h1>Welcome to sky</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio inventore perferendis labore
+                        accusamus suscipit at consectetur impedit accusantium et omnis.
+
+                    </p>
+                    <button class="btn1">Get Start Now</button>
+                    <button class="bnt2">Learn More</button>
+                    <!-- <i class="fa-solid fa-arrow-up-from-bracket"></i> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

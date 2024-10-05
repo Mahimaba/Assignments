@@ -14,9 +14,9 @@ header{
     background-size: 100% 100%;
 }
 header .header-h2{
-    padding-top: 70px;
+    padding: 70px 0px 30px 0px;
 /* font-size: 108px; */
-font-size: 7vw;
+font-size: clamp(20px ,7vw ,108px);
 text-transform: uppercase;
 /* padding-block: 10px; */
 font-weight: 700;
@@ -25,20 +25,22 @@ font-weight: 700;
 }
 header .header-p{
     /* width: 1639px; */
-width: 69.8%;
+width: 49.6%;
 margin: auto;
 /* font-size: 30px; */
-font-size: 2.5vw;
+font-size: clamp(17px,3.7vw,30px);
+/* font-size: 2.5vw; */
 margin-bottom: 60px;
 
 font-weight: 400;
 
 }
 header .header-btn{
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: clamp(16px ,3vw,25px);
    padding: 5px 12px;
     font-weight: 400;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     border-radius: 4px;
     background-color: #f6d365;
 
@@ -80,4 +82,161 @@ header .header-btn{
 .container{
     width: 90%;
     margin: auto;
+}
+
+
+/* section 1 */
+.sect1{
+    /* height: 500px; */
+    background-color: #f6d365;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.sect1::after{
+    top: 0;
+    left: 0;
+    content: url(../images/Design\ \(2\).png);
+    position: absolute;
+    z-index: -1;
+}
+.sect1-text{
+   
+    font-family: "Montserrat";
+    text-align: center;
+    color: #333333;
+   
+}
+.sect1-text .sect1-h2{
+  
+    text-transform: uppercase;
+    font-size: clamp(20px,5vw,64px);
+    font-weight: 700;
+    padding:45px 0px 13px 0px;
+   
+}
+.sect1-text .sect1-p{
+
+/* font-size: 25px; */
+font-size: clamp(17px,3.5vw,25px);
+width: 45%;
+margin: auto;
+font-weight: 400;
+
+   
+    
+}
+
+.row{
+    padding-block: 30px;
+}
+
+.row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.row .col .card{
+    width: 333.33%;
+    /* text-align: center; */
+    font-family: "Montserrat";
+    text-align: center;
+    color: #333333;
+
+    /* border: 2px solid; */
+}
+.row .col .card .img img{
+    width: 100%;
+    padding: 15px;
+}
+.row .col .card h2{
+font-size: clamp(17px .4vw ,32px);
+text-transform: uppercase;
+
+
+font-weight: 700;
+
+}
+.row .col .card p{
+font-size: clamp(16px,3vw ,19px);
+/* font-size: 19px; */
+width: 70%;
+margin: auto;
+padding-block: 10px;
+
+font-weight: 400;
+
+}
+
+
+
+
+/* section2 */
+.sect2{
+
+/* height: 800px; */
+background-color: #333333;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+.sect2::after{
+    content: url(../images/sect2_geaph.png);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1
+    ;
+}
+.sect2 .col{
+    /* border: 2px solid white; */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 40px;
+padding-block: 60px;
+    /* flex-direction: column; */
+}
+.sect2_text{
+    width: 50%;
+    /* border: 2px solid white; */
+    color: #ffffff;
+    font-family: "Montserrat";
+    padding-left: 70px;
+    /* display: flex; */
+    gap: 40px;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.sect2_text h2{
+    /* font-size: 58px; */
+    font-size: clamp(16px,4vw,58px);
+    text-transform: uppercase;
+ 
+    font-weight: 700;
+   
+}
+.sect2_text p{
+  padding-top: 50px;
+  width: 81%;
+    /* font-size: 30px; */
+    font-size: clamp(16px,3.5vw,30px);
+    font-weight: 400;
+
+}
+.sect2_text  button{
+    /* font-size: 25px; */
+    font-size: clamp(16px,3vw,25px);
+text-transform: uppercase;
+color: #333333;
+font-weight: 700;
+margin-top: 40px;
+text-align: center;
+/* width: 40%; */
+padding: 7px 20px;
+border-radius: 4px;
+background-color: #f6d365;
 }

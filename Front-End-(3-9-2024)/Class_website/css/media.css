@@ -4,6 +4,12 @@
 /* large desktop */
 @media only screen and (max-width: 1200px) {}
 
+.sect2 .col{
+    gap: 10px;
+}
+.sect2_text{
+    padding-left: 30px;
+}
 
 /* laptop and mini tab */
 @media only screen and (max-width: 992px) {
@@ -13,21 +19,54 @@
     .navlist #search{
         display: block;
     }
+    header .header-p{
+        width: 90%;
+        
+    }
+    .sect2 .col{
+        flex-direction: column;
+    }
+    .sect2 .sect2_img{
+        /* width: 100%; */
+    }.container{
+      width:90% ; 
+    }
+    .sect2_text p{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .sect2 .sect2_text{
+        width: 100%;
+        /* margin: auto; */
+        text-align: center;
+    }
+   
 }
 
 
 /* tablet */
 @media only screen and (max-width: 768px) {
-    header.header-h2{
-font-size: 60px;
+    .row .col .card{
+        width: 100%;
     }
-    header.header-p{
-        font-size: 27px;
+    .row .col{
+        flex-direction: column;
     }
+    .row .col .card p{
+        width: 90%;
+    }
+    .sect1-text .sect1-p{
+        width: 70%;
+    }
+
 
 
 }
 
 
 /* phone */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+   
+}
