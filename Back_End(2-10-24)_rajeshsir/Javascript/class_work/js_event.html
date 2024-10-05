@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="onc()">click</button>
+    <button  ondblclick="ondc()">clik</button>
+    <button onmousemove="onkeyp()">click</button>
+    <button onmouseleave="onkeyu()">click</button>
+    <button></button>
+    <div class="box">Hello this is event example</div>
+    <script>
+function onc(){
+    document.getElementsByClassName("box")[0].style.color="red"
+}
+function ondc(){
+    document.getElementsByClassName("box")[0].style.color="blue"
+}
+function onkeyp(){
+    document.getElementsByClassName("box")[0].style.color="yellow"
+}
+function onkeyu(){
+    document.getElementsByClassName("box")[0].style.color="green"
+}
+    </script>
+</body>
+</html>

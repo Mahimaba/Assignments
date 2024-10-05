@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function simple(){
+            var a=20,b=30;
+            document.write("without prameters:"+(a+b)+"<br>");
+
+        }
+
+        function simple1(a ,b){
+            
+            document.write("with prameters:"+(a+b)+"<br>");
+
+        }
+        function simple2(a=0,b=10){
+            
+            document.write("with prameters:"+(a+b)+"<br>");
+
+        }
+        simple()
+        simple1(12,34)
+        simple2(12)
+        simple2()
+    </script>
+    
+</body>
+</html>
