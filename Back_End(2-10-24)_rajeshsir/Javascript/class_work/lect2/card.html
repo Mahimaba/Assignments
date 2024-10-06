@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="plus()">+</button><span id="v1">1</span><button onclick="minus()">-</button>
+    <button onclick="plus1()">+</button><input type="text" value="1" id="ip"><button onclick="minus1()">-</button>
+
+    <script>
+
+        function plus(){
+            var num=document.getElementById("v1").innerHTML;
+            num++;
+            document.getElementById("v1").innerHTML=num;
+        }
+        function minus(){
+            var num=document.getElementById("v1").innerHTML;
+            if(num>0){
+                num--;
+                document.getElementById("v1").innerHTML=num;
+            }
+        }
+        function plus1(){
+            var num=document.getElementById("ip").value;
+            num++;
+            document.getElementById("ip").value=num;
+        }
+        function minus1(){
+            var num=document.getElementById("ip").value;
+            if(num>0){
+                num--;
+                document.getElementById("ip").value=num;
+            }
+        }
+    </script>
+</body>
+</html>
