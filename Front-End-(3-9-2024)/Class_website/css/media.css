@@ -12,7 +12,7 @@
 }
 
 /* laptop and mini tab */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 999px) {
     .navlist .li{
         display: none;
     }
@@ -23,11 +23,22 @@
         width: 90%;
         
     }
+    .card1{
+        width: 60%;
+        margin: auto;
+        /* margin: 0px; */
+    }
+
     .sect2 .col{
         flex-direction: column;
+        gap: 50px;
+    } .sect2_img{
+        margin: auto;
     }
-    .sect2 .sect2_img{
-        /* width: 100%; */
+    .sect2_img img{
+        width: 80%;
+        /* border: 2px solid white; */
+        margin: 0px auto;
     }.container{
       width:90% ; 
     }
@@ -42,6 +53,13 @@
         /* margin: auto; */
         text-align: center;
     }
+    .card1{
+       margin: 0;
+    }
+    .sect3_p{
+        width: 80%;
+        padding-block: 30px;
+    }
    
 }
 
@@ -53,14 +71,42 @@
     }
     .row .col{
         flex-direction: column;
+        
+    
     }
     .row .col .card p{
         width: 90%;
     }
+    .sect2_text{
+        padding: 0;
+    }
     .sect1-text .sect1-p{
         width: 70%;
     }
+   .sect2_img img{
+    width: 100%;
+    margin:0px auto;
+   }
 
+   .foot-col{
+    flex-direction: column;
+    gap: 40px;
+
+    
+   }
+   .foot-col .col-40{
+    width: 100%;
+    text-align: center;
+   }
+   .foot-col .col-60{
+    width: 100%;
+    justify-content: center;
+       
+   }
+   .foot-col .col-40 p{
+    text-align: center;
+  width: 100%;
+   }
 
 
 }
@@ -68,5 +114,36 @@
 
 /* phone */
 @media only screen and (max-width: 600px) {
+    .row3 .col{
+        flex-direction: column;
+      
+      
+    }
+    .card1{
+        width: 80%;
+        margin: auto;
+    }
+    .sect5 .sect-p{
+        width: 90%;
+    }
+    .sect6 p{
+        width: 90%;
+    }
+    .foot-col .col-60{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-col .col-60 .col{
+    width: 80%;
+    /* margin: auto; */
+    text-align: center;
+    gap: 30px;
+    /* border: 2px solid white; */
+
    
+    }
 }
+
+
