@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- using this keyword -->
+
+
+    <h3 id="msg"></h3>
+    <form action="" name="myfrom" onsubmit="return validate(this)">
+        <table border="1">
+            <tr>
+                <td colspan="3">Registration</td>
+            </tr>
+            <tr>
+                <td>USername</td>
+                <td><input type="text" name="un"><span style="color: red;" id="UN"></span></td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td><input type="text" name="ln"><span style="color: red;" id="LN"></span></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="pass"><span style="color: red;" id="PASS"></span></td>
+            </tr>
+            <tr>
+                <td>Confrom password</td>
+                <td><input type="password" name="cpass"><span style="color: red;" id="CPASS"></span></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"><span style="color: red;" id="EMAIL"></span></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="pn"><span style="color: red;" id="PN"></span></td>
+            </tr>
+            <tr>
+                <td>Hubby</td>
+                <td>Rading<input type="checkbox" name="red">Music<input type="checkbox" name="red">Sport<input
+                        type="checkbox" name="red"><span style="color: red;" id="RED"></span></td>
+
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Female<input type="radio" name="g" id="">Male<input type="radio" name="g" id=""><span
+                        style="color: red;" id="G"></span></td>
+
+            </tr>
+            <tr>
+                <td><input type="submit" name="" id=""></td>
+            </tr>
+        </table>
+        <script>
+            function validate(arg) {
+
+               if(un(arg)&& ln(arg) && pass(arg) && cpass(arg) && email(arg)){
+                return true
+               }
+               else{
+                return false
+               }
+
+              
+            }
+            function un(arg) {
+                // event.preventDefault();
+                var check = /^[a-zA-z]{3,}$/
+
+                if (arg.un.value == "" || arg.un.value == null) {
+                    document.getElementById("UN").innerHTML = " PLEASE FILL THE USer name";
+                    return false
+                }
+                else if (!check.test(arg.un.value)) {
+                    document.getElementById("UN").innerHTML = " PLEASE Match the Expression";
+                    return false
+                }
+                else {
+                    document.getElementById("UN").innerHTML = ""
+                    return true
+                }
+
+            }
+
+            function ln(arg) {
+                // event.preventDefault();
+                var check = /^[a-zA-z]{3,}$/
+                if (arg.ln.value == "" || arg.ln.value == null) {
+                    document.getElementById("LN").innerHTML = " PLEASE FILL THE LAST name";
+                    return false
+                }
+                else if (!check.test(arg.ln.value)) {
+                    document.getElementById("LN").innerHTML = " PLEASE Match the Expression";
+                    return false
+                }
+                else {
+                    document.getElementById("LN").innerHTML = ""
+                    return true
+                }
+            }
+
+            function pass(arg) {
+                // event.preventDefault();
+                var check = /^[0-9]{3,8}$/
+                if (arg.pass.value == "" || arg.pass.value == null) {
+                    document.getElementById("PASS").innerHTML = " PLEASE FILL PASSWORD";
+                    return false
+                }
+                else if (!check.test(arg.pass.value)) {
+                    document.getElementById("PASS").innerHTML = " PLEASE Match the Expression";
+                    return false
+                }
+                else {
+                    document.getElementById("PASS").innerHTML = ""
+                    return true
+                }
+            }
+            function cpass(arg) {
+                // event.preventDefault();
+                if (arg.cpass.value == "" || arg.cpass.value == null) {
+                    document.getElementById("CPASS").innerHTML = " PLEASE FILL CONFORM PASSWORD";
+                    return false
+                }
+                else if (!(arg.pass.value == arg.cpass.value)) {
+                    document.getElementById("CPASS").innerHTML = " both password must be same";
+                    return false
+                }
+                else {
+                    document.getElementById("CPASS").innerHTML = ""
+                    return true
+                }
+            }
+
+
+            function email(arg) {
+                var check = /^[a-z0-9\.\_]+\@+[a-z]+\.[a-z]{2,4}$/
+                if (arg.email.value == "" || arg.email.value == null) {
+                    document.getElementById("EMAIL").innerHTML = " PLEASE FILL THE EMAIL";
+                    return false
+                }
+                else if (!check.test(arg.email.value)) {
+                    document.getElementById("EMAIL").innerHTML = "PLEASE Match the Expression";
+                    return false
+                }
+                else {
+                    document.getElementById("EMAIL").innerHTML = ""
+                    return true
+                }
+
+            }
+
+        </script>
+    </form>
+
+</body>
+
+</html>

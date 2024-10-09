@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- using id -->
+
+<h3 id="msg"></h3>
+    <form action="" name="myfrom" onsubmit="return validate()">
+        <table border="1">
+            <tr>
+                <td colspan="3">Registration</td>
+            </tr>
+            <tr>
+                <td>USername</td>
+                <td><input type="text" id="un"></td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td><input type="text" id="ln"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" id="pass"></td>
+            </tr>
+            <tr>
+                <td>Confrom password</td>
+                <td><input type="password" id="cpass"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="pn"></td>
+            </tr>
+            <tr>
+                <td>Hubby</td>
+                <td>Rading<input type="checkbox"  name="red">Music<input type="checkbox"  name="red">Sport<input type="checkbox"  name="red"></td>
+                
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Female<input type="radio" name="g" id="">Male<input type="radio" name="g" id=""></td>
+             
+            </tr>
+            <tr>
+                <td><input type="submit" name="" id=""></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+       
+        function validate(){
+             var un=document.getElementById("un").value 
+        var ln=document.getElementById("ln").value 
+        var pass=document.getElementById("pass").value 
+        var cpass=document.getElementById("cpass").value 
+        var email=document.getElementById("email").value 
+        var pn=document.getElementById("pn").value
+        var g=document.forms["myfrom"]["g"]
+        var chk_arr = document.getElementsByName("g");
+        var red = document.getElementsByName("red");
+       console.log(g);
+    
+       
+                //   if(un=="" || un==null){
+                //         document.getElementById("msg").innerHTML="Please fill the username"
+                //         return false;
+                //         // un.focu?s();
+                       
+                      
+                //     }
+                //     else if(ln=="" || ln==null){
+                //         document.getElementById("msg").innerHTML="Please fill the Last name"
+                //         return false;
+                //         // ln.focus();
+                        
+                //     }
+                //     else if(pass=="" || pass==null){
+                //         document.getElementById("msg").innerHTML="Please fill the Password"
+                //         // pass.focus();
+                //         return false;
+                //     }
+                //     else if(cpass=="" || cpass==null){
+                //         document.getElementById("msg").innerHTML="Please fill the Confirm Pass"
+                      
+                //         return false;
+                //     }
+                //     else if(cpass!=pass){
+                //         document.getElementById("msg").innerHTML="password and conform password might same"
+                     
+                //         return false;
+                //     }
+                //     else if(email=="" || email==null){
+                //         document.getElementById("msg").innerHTML="Please fill the email"
+                       
+                //         return false;
+                //     }
+                //     else if(pn=="" || pn==null){
+                //         document.getElementById("msg").innerHTML="Please fill the phone number"
+                       
+                //         return false;
+                //     }
+
+
+                    // for radio button
+                    if(g[0].checked==true){
+
+                    }
+                    else if(g[1].checked==true){
+                        
+                    }
+                    else{
+                        document.getElementById("msg").innerHTML="Please any on of the gender"
+                       
+                     return false;
+                    }
+                    
+                    if(red[0].checked==true){
+
+}
+else if(red[1].checked==true){
+    
+}
+else if(red[2].checked==true){
+    
+}
+else{
+    document.getElementById("msg").innerHTML="Please select hobby"
+   
+ return false;
+}
+
+                   
+    
+    }
+    </script>
+</body>
+</html>

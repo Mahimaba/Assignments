@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body align="center">
+ 
+ 
+ 
+ <!-- 
+  By ID
+  
+  <form  onsubmit="return validate()">
+    <table border="1" align="center">
+      <tr>
+        <td colspan="2" align="center">Registration From</td>
+      </tr>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="" id="fn"></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="" id="ln"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit"></td>
+      </tr>
+    </table>
+  </form>
+  <script>
+    var fn=document.getElementById("fn").value;
+    var ln=document.getElementById("ln").value;
+  function validate(){
+      
+
+if(fn==""||fn==null){
+  alert("not acceptable")
+  return false;
+  
+}
+else if(ln==""|| ln==null){
+  alert("not acceptable")
+  return false;
+}
+} -->
+  <!-- </script> -->
+
+
+
+
+
+
+
+   <!-- 
+  by form name
+  
+  
+   <h4 style="color: red;" id="ans"></h4>
+<form action="" onsubmit="return validate()" name="myfrom">
+  <table border="1" align="center">
+    <tr>
+      <td colspan="2" align="center">Registration From</td>
+    </tr>
+    
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" name="ln">
+      <span id="in" style="color: red;"></span></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit"></td>
+    </tr>
+  </table>
+</form>
+<script>
+  function validate(){
+    var ln=document.forms["myfrom"]["ln"].value;
+    if(ln=="" ||ln==null){
+document.getElementById("ans").innerHTML="please Enter the value"
+return false
+    }
+      }
+</script>
+  -->
+
+
+  <!-- uding this keyword -->
+
+<h1 align="center" id="msg"></h1>
+  <form  onsubmit="return validate(this)" name="myfrom">
+    <table border="1" align="center">
+      <tr>
+        <td colspan="2" align="center">Registration From</td>
+      </tr>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="" id="fn"></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="" id="ln"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit"></td>
+      </tr>
+    </table>
+  </form>
+  <script>
+    function validate(arg){
+      if(arg.fn.value==""){
+document.getElementById("msg").innerHTML="First name is requried"
+return false
+      }
+      else if(arg.ln.value==""){
+document.getElementById("msg").innerHTML="last name is requried"
+return false;
+      }
+    }
+  </script>
+
+</body>
+</html>
