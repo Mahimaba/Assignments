@@ -1,125 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/bb308edeff.js" crossorigin="anonymous"></script>
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100%;height: 100vh;
-           
-        }
-        .container{
-            width: 100%;
-            margin: auto;
-            background-color: black;
-
-        }
-        .grid{
-            display: grid;
-            gap: 20px;
-            grid-auto-rows: 200px;
-        }
-        .grid_item1{
-            border: 1px solid ;
-            grid-area: 1/1/2/3;
-            width: 100%;
-            height: 100%;
-        }
-        .grid_item2{
-            border: 1px solid ;
-            grid-area: 1/3/2/4;
-        }
-        .grid_item3{
-            border: 1px solid ;
-            grid-area: 2/1/3/2;
-        }
-        .grid_item4{
-            border: 1px solid ;
-            grid-area: 2/2/3/3;
-        }
-        .grid_item5{
-            border: 1px solid ;
-            grid-area: 2/3/3/4;
-        }
-        .grid_item6{
-            border: 1px solid ;
-            grid-area: 3/1/4/3;
-        }
-        .grid_item7{
-            border: 1px solid ;
-            grid-area: 3/3/4/4;
-        }
-        .grid_item8{
-            border: 1px solid ;
-            grid-area: 4/1/5/4;
-        }
-        .list{
-            grid-area: 1/4/5/5;
-            color: white;
-            text-align: end;
-            padding-right: 10px;
-        }
-        .list ul{
-            list-style: none;
-        }
-        .list ul li{
-            padding-block: 10px;
-        }
-        .list ul li i{
-            font-size:1.3rem ;
-            padding: 0px 5px
-        }
-       img{
-            width: 100%;
-            height: 100%;
-        }
-
-
-
-        for responsive
-        @media only screen and (max-width:800px) {
-            .grid{
-            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-            }
-        }
-    </style>
-</head>
-<body>
-    col-3 row-3
-    <div class="container">
-        <div class="grid">
-            <div class="grid_item1 gridi"><img src="./imges/1.webp" alt=""></div>
-            <div class="list">
-                <ul>
-                    <li><h3>Shamnag</h3></li>
-                    <li>Home</li>
-                    <li style="color: pink;">Photo</li>
-                    <li>Contact</li>
-                    <li>Login</li>
-                    <li><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-vimeo"></i><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i></li>
-                </ul>
-            </div>
-            <div class="grid_item2 gridi"><img src="./imges/2.webp" alt=""></div>
-            <div class="grid_item3 gridi"><img src="./imges/3.jpeg" alt=""></div>
-            <div class="grid_item4 gridi"><img src="./imges/4.webp" alt=""></div>
-            <div class="grid_item5 gridi"><img src="./imges/5.jpeg" alt=""></div>
-            <div class="grid_item6 gridi"><img src="./imges/6.jpeg" alt=""></div>
-            <div class="grid_item7 gridi"><img src="./imges/7.jpeg" alt=""></div>
-            <div class="grid_item8 gridi"><img src="./imges/8.webp" alt=""></div>
-           
-    
-        </div>
-    </div>
-</body>
-</html> -->
-
 
 <!DOCTYPE html>
 <html lang="en"> 
@@ -127,15 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- icon link -->
+
+
     <script src="https://kit.fontawesome.com/bb308edeff.js" crossorigin="anonymous"></script>
-    <style>
+   
+   <!-- internal css -->
+    
+   <style>
         body{
             background-color: black;
         }
 
+
+        /* this is grid layout */
         .grid{
             width: 100%;
-            /* height: 50vh; */
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 30%;
             grid-template-rows: repeat(4,170px);
@@ -147,16 +33,24 @@
             gap: 5px;
 
         }
+
+        /* grid item */
         .grid_item{
             border: 2px solid;
            
             
         }
+        
+
+        /* grid item img tag */
         .grid_item img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
+
+        /* for indiviual grid item */
         .g1
         {
             background-color: rgb(149, 148, 141);
@@ -214,15 +108,24 @@
             background-color: black;
             grid-area: g11;
         }
+
+
+        /* unorder list */
         ul{
             list-style: none;
             text-align: end;
             color: white;
         }
+
+
+        /* unorder list items */
         ul li{
             padding-block: 7px;
             font-size: 1.3rem;
         }
+
+
+        /* google icons */
         i{
             padding: 7px;
             font-size: 1.3rem;
@@ -232,6 +135,9 @@
             text-align: end;
            
         }
+
+
+        /* reposnsive for mobile screen */
         @media only screen and (max-width:600px) {
             .grid{
             
@@ -260,7 +166,12 @@
     </style>
 </head>
 <body>
+
+
+    <!-- main grid container -->
     <div class="grid">
+
+        <!-- grid items -->
         <div class="grid_item g1"><img src="./imges/1.webp" alt=""></div>
         <div class="grid_item g2"><img src="./imges/2.webp" alt=""></div>
         <div class="grid_item g3"><img src="./imges/3.jpeg" alt=""></div>
@@ -270,7 +181,8 @@
         <div class="grid_item g7"><img src="./imges/8.webp" alt=""></div>
         <div class="grid_item g8"><img src="./imges/7.jpeg" alt=""></div>
         <div class="grid_item g9"><img src="./imges/6.jpeg" alt=""></div>
-        <!-- <div class="grid_item g10">10</div> -->
+        
+        <!-- nav bar  -->
         <div class="grid_item g11">
             <h2>Subscribe</h2>
             <ul>
@@ -283,6 +195,8 @@
         </div>
        
     </div>
+
+    <!-- end of grid container -->
     
 </body>
 </html>

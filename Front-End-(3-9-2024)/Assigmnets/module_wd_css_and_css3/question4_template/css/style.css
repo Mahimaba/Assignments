@@ -1,15 +1,23 @@
+
+
+/* universal selectore */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-boxs;
 }
+
+
+/* frid layout */
 .grid{
     display: grid;
     grid-template-rows: 40px 350px 85px 85px 100px;
 }
-.grid_i{
-    /* border: 2px solid green; */
-}
+
+
+
+
+/* indivusal items */
 #g1{
     grid-area: 1/1/2/2;
     background-color: cadetblue;
@@ -30,11 +38,7 @@
     background-color: hotpink;
    
 }
-/* #g5{
-    grid-area: 3/3/5/4; 
-    background-color: lightblue;
-    grid-area: "extra";
-} */
+
 #g6{
     grid-area: 3/4/4/5; 
     background-color: lawngreen;

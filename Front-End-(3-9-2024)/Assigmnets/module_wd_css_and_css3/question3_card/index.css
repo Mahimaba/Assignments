@@ -1,23 +1,25 @@
+
+
+/* universal selector */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* header tag */
 header{
     background-color: rgba(194, 198, 198, 0.415);
 }
+
+
+/* container class for space */
 .container{
     width: 80%;
     margin: auto;
 }
-.row{
- 
 
-}
-.col{
-    display: flex;
-    flex-direction: column;
-}
+/* col class  */
 .col{
     display: flex;
     flex-direction: row;
@@ -29,7 +31,6 @@ header{
 }
 
 .col .c1{
-    width: 33.3%;
     background-color: white;
 }
 .col .c1 h2{
@@ -48,7 +49,11 @@ header{
     margin: 5px 5px;
     font-size: clamp(15px ,1vw ,21px);
 }
-    @media only screen and (max-width:1010px) {
+
+
+
+/* median query for smooth transition */
+    @media only screen and (max-width:900px) {
         .col{
             flex-direction: column;
         
