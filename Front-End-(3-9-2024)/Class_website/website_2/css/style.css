@@ -1,0 +1,499 @@
+
+
+/* univarsal selectore */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+
+
+}
+
+.end1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/back_waves.png);
+    background-position: center;
+    background-size: 190% 110%;
+    padding: 0;
+
+}
+
+.navbar .logo img {
+    font-size: clamp(30px, 5vw, 20px);
+}
+
+.navlist ul li {
+    display: inline-block;
+    font-size: clamp(18px, 2vw, 25px);
+    color: #716c53;
+    font-weight: 700;
+    font-family: "Poppins";
+    padding: 0px 15px;
+}
+
+.navlist i {
+    display: none;
+}
+
+/* header css end */
+
+
+/* head div css */
+.head {
+    background-image: url(../images/head_back_img.png);
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-block: 70px;
+
+
+
+}
+
+.head_text {
+    width: 30%;
+    font-family: "Montserrat";
+    color: #716c53;
+    margin-right: 70px;
+    padding-right: 40px;
+
+}
+
+.head_h2 {
+
+    width: 50%;
+    font-size: clamp(23px, 7vw, 91px);
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.head_p {
+    font-size: clamp(19px, 2vw, 32px);
+    font-weight: 400;
+    padding-block: 20px;
+
+}
+
+.head_btn {
+    border-radius: 4px;
+    padding: 7px 50px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #716c53;
+}
+
+
+/* sect1 css start */
+.sect1 {
+    width: 100%;
+    padding-block: 60px;
+    background-color: #eee2b5;
+    
+}
+
+.sect1_head {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #716c53;
+    padding-block: 30px;
+}
+
+.sect1_head_h2 {
+    font-size: clamp(21px, 5.8vw, 64px);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.sect1_head_p {
+
+    font-size: clamp(17px, 1.6vw, 25px);
+
+    font-weight: 400;
+}
+
+.row {
+    background-image: url(../images/new_card_sect1_img.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-block: 40px;
+
+
+}
+
+.flex_box {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.col {
+    text-align: center;
+    color: #716c53;
+}
+
+.sect1 .row .col h2 {
+    font-size: clamp(19px, 3vw, 33px);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding-block: 10px;
+
+}
+
+.sect1 .row .col p {
+
+    font-size: clamp(17px, 1.6vw, 25px);
+    font-weight: 600;
+    font-family: "Nunito";
+
+}
+
+.sect1 .row .col img {
+    width: 90%;
+}
+
+/* sect1 css end */
+
+
+/* section2 css start */
+.sect2 {
+
+    position: relative;
+    padding-block: 50px;
+
+
+}
+
+.sect2_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sect2_col {
+    width: 60%;
+}
+
+.sect2 img {
+    padding-block:
+        40px;
+    width: 60%;
+}
+
+svg {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+}
+
+.sect2_text {
+    color: #716c53;
+
+}
+
+.sect2_text_h2 {
+    font-size: clamp(21px, 6vw, 75px);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.sect2_text_p {
+    width: 80%;
+    font-size: clamp(19px, 3vw, 30px);
+    font-weight: 400;
+    font-family: "Nunito";
+    padding-block: 20px;
+}
+
+/* section2 css end */
+
+/* sect3 css */
+.sect3_img {
+    padding: 40px;
+    width: 80%;
+   
+}
+
+.text_end {
+    text-align: center;
+}
+
+.sect3 {
+    padding-block: 70px;
+    position: relative;
+}
+
+.sect3 svg {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* section 4 css start */
+.sect4 .bor {
+    border-left: 5px dashed #716c53;
+    border-right: 5px dashed #716c53;
+}
+
+.sect4 .row .col {
+    width: 33.33%;
+    padding: 40px;
+}
+
+.sect4 .row .col h2 {
+    font-size: clamp(30px, 9vw, 123px);
+}
+
+/* section 4 css end */
+
+/* section 5 css start */
+.sect5 {
+    background-color: white;
+}
+
+.sect5 .row {
+    background-image: none;
+
+}
+
+.sect5 .flex_box {
+    gap: 70px;
+}
+
+.sect5 .row .sect5_img {
+    border-radius: 8px;
+    background-color: #f5f1e4;
+}
+
+.sect5 .row .sect5_img img {
+    width: 40%;
+    padding-block: 60px;
+}
+
+.sect5 .row .col p {
+    width: 90%;
+    margin: auto;
+    padding-block: 20px;
+}
+
+.sect5 .row .col {
+    padding: 30px;
+}
+
+.sect5 .row .col button {
+    width: 100%;
+}
+
+/* section 5 css end */
+
+
+
+/* sect 6 start css */
+.sect6 {
+    background-image: url(../images/sect6_back_img.png);
+    background-size: 100% 100%;
+    background-color: #b09d3cd6;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.sect6 .sect6_text {
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 70px;
+}
+
+.sect6 .sect6_text p {
+
+    font-size: clamp(18px, 4vw, 45px);
+    width: 70%;
+    margin: auto;
+    padding-block: 40px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.sect6 .sect6_text h3 {
+    font-size: clamp(18px, 2vw, 38px);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 50px;
+
+}
+
+/* sect 6 end css */
+
+
+/* section7 start css */
+.sect7 {
+    text-align: center;
+    padding-block: 50px;
+    background: url(../images/sect7_back.png);
+}
+
+.sect7_text {
+    text-align: center;
+    padding-block: 30px;
+}
+
+.sect7_text_h2 {
+    font-size: clamp(30px, 7vw, 75px);
+    color: #000000;
+    font-weight: 600;
+    font-family: "Poppins";
+
+}
+
+.sect7_text_p {
+
+    font-size: clamp(19px, 1.7vw, 30px);
+    color: #3a3a3a;
+    font-weight: 400;
+    width: 50%;
+    font-family: "Nunito";
+    margin: auto;
+    padding: 40px;
+
+}
+
+.sect7_text_sec_p {
+    font-size: clamp(16px, 1.2vw, 24px);
+    padding-block: 16px;
+}
+
+.sect7_btn {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+
+}
+
+.sect7_btn input {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: clamp(18px, 1.5vw, 26px);
+    color: #000000;
+    padding-block: 8px;
+    font-weight: 400;
+    background-color: white;
+    font-family: "Nunito";
+    padding-left: 10px;
+
+}
+
+.sect7_btn button {
+    outline: none;
+    border: none;
+    font-size: clamp(18px, 1.5vw, 26px);
+    color: #ffffff;
+    font-weight: 400;
+    padding: 2px 30px;
+    font-family: "Nunito";
+    text-align: center;
+    border-radius: 4px;
+    background-color: #222222;
+}
+
+/* section7 start end */
+
+
+/* footer css start */
+.footer {
+    background-color: #222222;
+    padding-block: 60px;
+}
+
+.foot_row {
+    display: flex;
+    color: white;
+    padding-block: 40px;
+
+}
+
+.foot_row .right {
+    width: 40%;
+
+}
+
+.foot_row .right .foot_p {
+    font-size: clamp(18px, 1.5vw, 26px);
+    color: #ffffff;
+    font-weight: 400;
+    width: 80%;
+    font-family: "Nunito";
+    padding-block: 20px;
+}
+
+.footer .foot_row .icons i {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.foot_row .left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+}
+
+.foot_row .left .left_col {
+    width: 33.33%;
+
+}
+
+/* left */
+.foot_row .left .left_col_h2 {
+    font-size: clamp(18px, 1.8vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.foot_row .left ul {
+    list-style: none;
+    padding-block: 20px;
+}
+
+.foot_row .left ul li {
+    font-size: clamp(18px, 1.5vw, 24px);
+    padding-block: 2px;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+
+/* footer css end */

@@ -1,0 +1,143 @@
+/* desktop */
+@media only screen and  (max-width:1100px) {
+    .sect5 .row .col{
+        padding: 0;
+    }
+}
+
+/* for mini tab */
+@media only screen and  (max-width:900px) {
+    .sect5 .row .col {
+        padding: 0;
+    }  
+    .foot_row .left{
+        gap: 20px;
+    }
+   
+}
+
+
+
+/* for tablate */
+@media only screen and (max-width:768px) {
+    .navlist ul{
+        display: none;
+       
+    }
+    .navlist i{
+        display: block;
+        margin-right: 50px;
+        font-size: clamp(18px,1.6vw,25px);
+    }
+    .head_text{
+        width: 40%;
+        padding: 0;
+    }
+    .head_text h2,.head_text p{
+        width: 100%;
+
+    }
+
+    
+
+
+    /* card1 responsive */
+    .flex_box{
+        flex-direction: column;
+    }
+    .flex_box .col{
+        width: 50%;
+        margin: auto;
+    }
+    .flex_box .col img{
+        width: 20%;
+        margin: auto;
+    }
+    .sect2_row{
+        flex-direction: column;
+        /* border: 2px solid; */
+        justify-content: center;
+        align-items: center;
+       }
+       .sect2_row .sect2_col {
+        width:80% ;
+        
+        text-align: center;
+       
+       }
+       .sect2_row .sect2_col  p{
+        width: 100%;
+       }
+       .sect4 .row .flex_box{
+        gap: 10px;
+       }
+       .sect7_text_p{
+        width: 70%;
+       }
+       .foot_row{
+        flex-direction: column;
+        gap: 40px;
+       }
+       .foot_row .right,.foot_row .left{
+        width: 80%;
+        margin: auto;
+       
+       }
+       .foot_row .right{
+        text-align: center;
+       }
+       .foot_row .right .foot_p{
+        width: 90%;
+        margin: auto;
+       }
+       .foot_row .left{
+        text-align: center;
+       }
+       .foot_row  .left ul li{
+        padding-block: 5px;
+       }
+}
+
+
+
+/* for mobile screen */
+@media only screen and  (max-width:600px) {
+    .head_text{
+        width: 80%;
+        margin: auto;
+    }
+    .sect4 .row .flex_box{
+
+       gap: 50px;
+    }
+    .sect4 .row .col{
+        padding: 0;
+    }
+    .sect6 .sect6_text p{
+        width: 100%;
+    }
+    .sect7_text_p{
+        width: 90%;
+       }
+       .sect7_btn input{
+        width: 100px;
+       }
+       .sect7_btn button{
+        width: 120px;
+        padding: 3px 10px;
+       }
+
+
+       /* footer */
+       .foot_row .left{
+        flex-direction: column;
+        gap: 30px;
+       }
+       .foot_row .left .left_col{
+        width: 80%;
+        margin: auto;
+       }
+       .foot_row  .left ul{
+        padding-block: 10px;
+       }
+}
