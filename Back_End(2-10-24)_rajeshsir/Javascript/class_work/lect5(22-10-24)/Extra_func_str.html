@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- charAt=it's give character of that index -->
+    <script>
+        var str="my name is string function"
+        document.write(str.charAt(4))//a
+        document.write(str.charAt())//m
+        // document.write(str.charAt(-4))//m
+        document.write(str.charAt(str.length-1))//m
+    </script>
+<br>
+
+<!-- concat()=for combining two string -->
+ <script>
+    var s1="mahima"
+    var s2="dabhi"
+    document.write(s1+s2+"<br>");
+    document.write(s1+" "+s2+"<br>");
+    document.write(s1.concat(" "+s2));
+ </script>
+<br><br>
+
+<!-- index0f() and Lastindexof()=give the index value from character -->
+
+<script>
+
+        var str="my name is string function"
+        document.write(str.indexOf('a'))//4
+        document.write(str.indexOf('m')+"<br>")//0
+        document.write(str.indexOf('m',1)+"<br>")//0
+        // document.write(str.charAt(-4))//m
+
+
+        document.write(str.lastIndexOf("i")+"<br>")
+
+        // i want to find second last index tha
+        var last=str.lastIndexOf("i");
+        var sec_last=str.lastIndexOf("i",last-1);
+          document.write(sec_last)
+
+        // 
+</script>
+
+
+
+<!-- search()-serach word and give index of first character -->
+<br><br>
+
+<script>
+    var str="ma ni Ma Ni rin Jay ma Rin"
+    document.write(str.search("ma")+"<br>")
+    document.write(str.search("Ma")+"<br>")
+    document.write(str.search(/Ma/i)+"<br>")// case insencetive 
+document.write("<br>")
+document.write("<br>")
+document.write("<br>")
+document.write("<br>")
+
+    // match() return the string which are match
+
+    document.write(str.match("ma")+"<br>");
+    document.write(str.match(/ma/g)+"<br>");
+    document.write(str.match(/ma/gi)+"<br>");//jetli var match thase aetli var ma result ma malse
+    // replace() -replace the string
+    document.write(str.replace("ma","rinku")+"<br>");
+    document.write(str.replace(/ma/g,"rinku")+"<br>");
+    document.write(str.replace(/ma/gi,"rinku")+"<br>");
+   
+
+</script>
+
+
+<!-- substr()//give sub string syntax str.substr(startIndex,lastIndex) -->
+
+<script>
+    
+</script>
+</body>
+</html>
